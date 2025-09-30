@@ -97,7 +97,7 @@ Has it changed?
 > **Note**: You just implemented linear regression. We'll talk about it in the next lesson.
 
 - 0.051
-- 0.51
+- `0.51`
 - 5.1
 - 51
 
