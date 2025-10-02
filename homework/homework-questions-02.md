@@ -128,7 +128,7 @@ What's the value of std?
 Options:
 
 - 0.15
-- 0.515
+- `0.515`
 - 5.15
 - 51.5
 
