@@ -1,4 +1,4 @@
-## Homework [DRAFT]
+## Homework
 
 > Note: sometimes your answer doesn't match one of the options exactly. 
 > That's fine. 
@@ -43,13 +43,9 @@ What are the two features that have the biggest correlation?
 
 - `interaction_count` and `lead_score`                0.01  
 - `number_of_courses_viewed` and `lead_score`        -0.00  
-- `number_of_courses_viewed` and `interaction_count` `-0.024`  
-- `annual_income` and `lead_score`                    0.016  
-(real largest not listed in homework:)  
-- `interaction_count` and `annual_income`             **`0.027`**
+- `number_of_courses_viewed` and `interaction_count` -0.024  
+- `annual_income` and `interaction_count`            **`0.027`**  
   
-
-
 ### Split the data
 
 * Split your data in train/val/test sets with 60%/20%/20% distribution.
