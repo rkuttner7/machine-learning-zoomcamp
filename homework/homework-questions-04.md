@@ -39,12 +39,10 @@ AUC can go below 0.5 if the variable is negatively correlated with the target va
 
 Which numerical variable (among the following 4) has the highest AUC?
 
-- balance
-- day
-- duration
-- previous
-Fields names listed do match data, max field:
+- lead_score
 - `number_of_courses_viewed` 0.742
+- interaction_count
+- annual_income
 
 
 ### Question 2: Training the model
@@ -57,11 +55,10 @@ LogisticRegression(solver='liblinear', C=1.0, max_iter=1000)
 
 What's the AUC of this model on the validation dataset? (round to 3 digits)
 
-- 0.69
-- `0.79` (`.817`)
-- 0.89
-- 0.99
-
+- 0.32
+- 0.52
+- `0.72` (`.817`)
+- 0.92
 
 ### Question 3: Precision and Recall
 
@@ -73,10 +70,10 @@ Now let's compute precision and recall for our model.
 
 At which threshold precision and recall curves intersect?
 
-* 0.265
-* 0.465
-* `0.665`
-* 0.865
+* 0.145
+* 0.345
+* `0.545`
+* 0.745
 
 
 ### Question 4: F1 score
@@ -93,10 +90,10 @@ Let's compute F1 for all thresholds from 0.0 to 1.0 with increment 0.01
 
 At which threshold F1 is maximal?
 
-- 0.02
-- 0.22
-- 0.42
-- 0.62
+- 0.14
+- 0.34
+- `0.54`
+- 0.74
   
 Correct threshold not listed above:  
 **`Threshold =  0.570`**`; F1 =  0.812`
@@ -120,8 +117,8 @@ How large is standard deviation of the scores across different folds?
 
 - 0.0001
 - 0.006
-- 0.06
-- 0.26
+- `0.06`
+- 0.36
 Answer not listed:  
 `0.036`  
 
