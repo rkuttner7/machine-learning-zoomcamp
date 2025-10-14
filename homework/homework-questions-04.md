@@ -75,7 +75,7 @@ At which threshold precision and recall curves intersect?
 
 * 0.265
 * 0.465
-* 0.665
+* `0.665`
 * 0.865
 
 
