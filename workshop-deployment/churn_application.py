@@ -2,9 +2,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# Web application
+# Web service application
 
-# The code is based on the modules 3 and 4. We use the same dataset: [telco customer churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+# Homework 5
 
 import pickle
 

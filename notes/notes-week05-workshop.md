@@ -76,7 +76,9 @@ Define required / allowed fields and values for input and output using library *
 
 * `uv init` - initialize project  
 * `uv add [python libraries]` - add python library dependencies  
-
+* `uv add --dev [python libraries]` - development only python library dependencies  
+    * **Example**: `uv add --dev requests`  
+  
 * `uv run` - run something in virtual environment:  
     * `uv run uvicorn predict:app --host 0.0.0.0 --port 9696 --reload`
   

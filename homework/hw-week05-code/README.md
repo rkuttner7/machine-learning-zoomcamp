@@ -15,6 +15,7 @@ In this homework, we're going to continue working with the lead scoring dataset.
 * What's the version of uv you installed?
 * Use `--version` to find out
 
+`uv 0.9.5`
 
 ## Initialize an empty uv project
 
@@ -28,6 +29,12 @@ and do it there.
 * What's the first hash for Scikit-Learn you get in the lock file?
 * Include the entire string starting with sha256:, don't include quotes
 
+```BASH
+uv add scikit-learn==1.6.1
+```
+  
+UV.lock:
+`sha256:b4fc2525eca2c69a59260f583c56a7557c6ccdf8deafdba6e060f94c1c59738e`
 
 ## Models
 
@@ -81,9 +88,13 @@ Let's use the model!
 What's the probability that this lead will convert? 
 
 * 0.333
-* 0.533
+* `0.533`
 * 0.733
 * 0.933
+
+```BASH
+uv run predict.py 
+```
 
 If you're getting errors when unpickling the files, check their checksum:
 
@@ -114,10 +125,22 @@ requests.post(url, json=client).json()
 What's the probability that this client will get a subscription?
 
 * 0.334
-* 0.534
+* `0.534`
 * 0.734
 * 0.934
 
+```BASH
+uv add fastapi uvicorn
+uv add --dev requests
+
+# Run the application using uvicorn (ASGI server)
+# predict_application:app → refers to 'app' object inside predict_application.py
+# --host 0.0.0.0 → listen on all interfaces
+# --port 9696    → listen on port 9696
+uv run uvicorn predict_application:app --host 0.0.0.0 --port 9696 --reload
+
+uv run python predict_test.py
+```
 
 ## Docker
 
@@ -151,11 +174,16 @@ Download the base image `agrigorev/zoomcamp-model:2025`. You can easily make it 
 So what's the size of this base image?
 
 * 45 MB
-* 121 MB
+* `121 MB`
 * 245 MB
 * 330 MB
 
 You can get this information when running `docker images` - it'll be in the "SIZE" column.
+
+```BASH
+docker pull agrigorev/zoomcamp-model:2025
+docker images agrigorev/zoomcamp-modelagrigorev/zoomcamp-model
+```
 
 
 ## Dockerfile
@@ -176,6 +204,15 @@ Now complete it:
 * Run it with uvicorn 
 
 After that, you can build your docker image.
+
+```BASH
+# explore the image
+docker run -it --rm --entrypoint=bash agrigorev/zoomcamp-model:2025
+
+docker build -t zoomcamp-hw5 .
+
+docker run -it --rm -p 9696:9696 zoomcamp-hw5
+```
 
 
 ## Question 6
@@ -199,8 +236,11 @@ What's the probability that this lead will convert?
 * 0.39
 * 0.59
 * 0.79
-* 0.99
+* `0.99`
 
+```BASH
+uv run python predict_test.py
+```
 
 ## Submit the results
 
