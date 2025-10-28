@@ -41,10 +41,10 @@ Let's train a decision tree regressor to predict the `jamb_score` variable.
 Which feature is used for splitting the data?
 
 
-* `'vehicle_weight'`
-* `'model_year'`
-* `'origin'`
-* `'fuel_type'`
+* **`'vehicle_weight'`**
+* 'model_year'
+* 'origin'
+* 'fuel_type'
 
 
 ## Question 2
@@ -59,7 +59,7 @@ Train a random forest regressor with these parameters:
 What's the RMSE of this model on the validation data?
 
 * 0.045
-* 0.45
+* **`0.45`**
 * 4.5
 * 45.0
 
@@ -79,11 +79,13 @@ Consider 3 decimal places for calculating the answer.
 - 10
 - 25
 - 80
-- 200
+- **`200`**
 
 If it doesn't stop improving, use the latest iteration number in
 your answer.
-
+  
+> Lowest RMSE=0.442362 at `n_estimator=180`  
+  
 
 ## Question 4
 
@@ -98,7 +100,7 @@ Let's select the best `max_depth`:
 
 What's the best `max_depth`, using the mean RMSE?
 
-* 10
+* **`10`**
 * 15
 * 20
 * 25
@@ -128,10 +130,10 @@ For this homework question, we'll find the most important feature:
 
 What's the most important feature (among these 4)? 
 
-* `vehicle_weight`
-* `horsepower`
-* `acceleration`
-* `engine_displacement`	
+* **`vehicle_weight`**
+* horsepower
+* acceleration
+* engine_displacement	
 
 
 ## Question 6
@@ -162,7 +164,7 @@ Now change `eta` from `0.3` to `0.1`.
 Which eta leads to the best RMSE score on the validation dataset?
 
 * 0.3
-* 0.1
+* **`0.1`**
 * Both give equal value
 
 ## Submit the results
