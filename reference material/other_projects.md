@@ -25,4 +25,8 @@
 
 * [Imagenet dataset](https://www.image-net.org/) instrumental in advancing computer vision and deep learning research.  
 * [Pre-trained models | Keras](https://keras.io/api/applications/) Keras Applications are deep learning models that are made available alongside pre-trained weights. These models can be used for prediction, feature extraction, and fine-tuning.  
-  
+
+**RNN**:
+* [Recurrent Neural Networks cheatsheet | Stanford](https://web.stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks)  
+* [Building Recurrent Neural Networks in PyTorch | CodeGenes.net](https://www.codegenes.net/blog/how-to-build-a-recurrent-neural-network-in-pytorch/) blogpost tutorial  
+* [PyTorch implementation of DeepWeiSurv | Github](https://github.com/survml/survml-deepweisurv)  
