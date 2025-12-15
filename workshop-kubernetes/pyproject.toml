@@ -1,0 +1,17 @@
+[project]
+name = "workshop-kubernetes"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.124.2",
+    "keras-image-helper>=0.0.2",
+    "onnxruntime>=1.23.2",
+    "uvicorn>=0.38.0",
+]
+
+[dependency-groups]
+dev = [
+    "requests>=2.32.5",
+]
