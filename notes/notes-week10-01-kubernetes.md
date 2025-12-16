@@ -24,3 +24,5 @@ Kubernetes Cluster is made up of:
 ### **Further reading**:  
 * [Amazon Elastic Container Services](https://aws.amazon.com/ecs/) container orchestration alternative to Kubernetes  
 * [Google Cloud Run](https://cloud.google.com/run) container orchestration alternative to Kubernetes    
+* [kubernetes extension|Visual Studio Code](https://code.visualstudio.com/docs/azure/kubernetes) handy extension to create K8s templates.
+* [Load Balancer | Kind](https://kind.sigs.k8s.io/docs/user/loadbalancer/) service type that automatically provisions an external load balancer to distribute incoming traffic across multiple pods, ensuring high availability and performance for applications. It provides a stable IP address for accessing the application from outside the cluster.   

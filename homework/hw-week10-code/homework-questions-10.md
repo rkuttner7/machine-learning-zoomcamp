@@ -329,7 +329,7 @@ kind delete cluster
   
 Delete the docker image:
 ```bash
-docker image
+docker images
 docker rmi <IMAGE ID>
 ```
 

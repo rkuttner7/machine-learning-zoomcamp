@@ -384,3 +384,9 @@ Delete the Kind cluster:
 ```bash
 kind delete cluster --name mlzoomcamp
 ```
+  
+Delete the docker image:
+```bash
+docker images
+docker rmi <IMAGE ID>
+```
